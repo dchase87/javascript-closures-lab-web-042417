@@ -14,13 +14,13 @@ function bumpCounter() {
   }
 }
 
-var sharkCreator = createAnimal('Shark')
-var sharkWithFrickinLaserbeam = sharkCreator('Laserbeam')
-var sharkWithFrickinCannon = sharkCreator('Cannon')
-
 function createAnimal(animalType) {
   function animal(deadlyDevice) {
     return {animalType, deadlyDevice}
   }
   return animal
 }
+
+var sharkCreator = createAnimal('Shark')
+var sharkWithFrickinLaserbeam = sharkCreator('Laserbeam')
+var sharkWithFrickinCannon = sharkCreator('Cannon')
